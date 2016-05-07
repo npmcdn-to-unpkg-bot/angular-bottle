@@ -16,6 +16,8 @@
         <script type="text/javascript" src="static/js/tela/tela.module.js"></script>
         <script type="text/javascript" src="static/js/tela/tela.config.js"></script>
         <script type="text/javascript" src="static/js/tela/components/inputBacana.directive.js"></script>
+        
+        <script type="text/javascript" src="static/js/tela/components/field.directive.js"></script>
 
         <script type="text/javascript" src="static/js/app/app.module.js"></script>
         <script type="text/javascript" src="static/js/app/app.config.js"></script>
@@ -24,6 +26,10 @@
     <body ng-app="app">
         <div ng-controller="HomeController">
             ({greeting})
+            ({valor})
+            <my-field valor="valor">lol</my-field>
+
+
             <my-tabs>
               <my-pane title="Hello">
                 <h4>Hello</h4>
@@ -35,6 +41,7 @@
                 <p><a href ng-click="i = i + 1">counter: ({i || 0})</a></p>
               </my-pane>
             </my-tabs>
+            
         </div>
     </body>
 </html>

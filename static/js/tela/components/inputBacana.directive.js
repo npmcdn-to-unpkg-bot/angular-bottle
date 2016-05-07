@@ -31,7 +31,7 @@
         controller: function() {
             this.$onInit = function() {
                 this.tabsCtrl.addPane(this);
-                console.log(this);
+                //console.log(this);
             };
         },
         templateUrl: 'static/js/tela/components/my-pane.html'
